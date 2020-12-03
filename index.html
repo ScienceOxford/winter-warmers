@@ -29,20 +29,48 @@
     <p>Download <a href=".\examples\Winter-Warmers_Starter-Code.hex" target="_blank">the starter code</a>, go to <a href="https://makecode.microbit.org/" target="_blank">the editor</a>, and drag-and-drop the starter code into the window.</p>
     <br>
     <p>Follow the instructions to <a href="https://scienceoxford.github.io/do-your-bit/pair-microbit.html" target="_blank">pair your micro:bit</a> and create your first program!</p>
-    <img src="https://scienceoxford.github.io/code-alert/images/instructions-postit.PNG" alt="Instructions-- Step 1: Pair your microbit. Step 2: Put the code on your micro:bit. Step 3: Experiment with the code blocks on the right. Step 4: Experiment with new blocks from the menu on the left." width="1000px" height="auto">
+    <img src=".\images\instructions-postit.PNG" alt="Instructions-- Step 1: Pair your microbit. Step 2: Put the code on your micro:bit. Step 3: Experiment with the code blocks on the right. Step 4: Experiment with new blocks from the menu on the left." width="1000px" height="auto">
     <br>
     <br>
   </div>
 
   <div id="torch" class="left">
     <h3>Creating a light-reactive torch</h3>
-    <p>...</p>
+    <p>To make the micro:bit respond to the light levels, you need to create an 'if then else' statement.</p>
+    <p><strong>if</strong> the light level is high, <strong>then</strong> make something happen, <strong>else</strong> make something different happen.</p>
+    <img src=".\images\on-vs-if-light.PNG" alt="Code Comparison-- Left: on button A pressed, show icon. Right: forever, if 'button A is pressed' then, show icon" width="1000px" height="auto">
+    <br>
+    <p>These two blocks of code are <em>equivalent</em>.</p>
+    <p>The one on the right makes it easier to build more complex programs.</li>
+    <br>
+    <p>Using the code on the right, at the moment a heart will show on the micro:bit's display <strong>if button A is pressed</strong>.</p>
+    <p>Add to it, by clicking the <code>+</code> button at the bottom.</p>
+    <p>Make something different happen when the button is not pressed (<strong>else</strong>), for example clear the screen.</p>
+    <img src=".\images\if-else-button.PNG" alt="forever, if 'button A is pressed' then, show icon, else, clear screen" width="600px" height="auto">
+    <br>
+    <p>Now, you should see a heart when you click the button, and it will go away again afterwards. You can add a <code>pause</code> block after the icon to make it stay for longer!</p>
+    <br>
+    <p>Finally, update the code blocks so that the heart is displayed dependent on light level, instead of on a button press.</p>
+    <p>You can find the <code>less than</code> block in the <strong>Logic</strong> menu.</p>
+    <img src=".\images\if-else-light.PNG" alt="forever, if 'light level' less than 200 then, show icon, else, clear screen" width="600px" height="auto">
+    <br>
+    <p>Decide what <strong>you want</strong> to happen when the light is low, and edit the code.</p>
+    <p>Experiment with your physical micro:bit to see what is a good number to set the light level to - try covering the screen with your hand, or putting the micro:bit under your table!</p>
     <br>
   </div>
 
   <div id="temperature" class="left">
     <h3>Coding the temperature sensor</h3>
-    <p>...</p>
+    <p>Using the temperature sensor is very similar to using the light sensor!</p>
+    <p>Right click on your light level if-then-else block, and duplicate it.</p>
+    <p>Put the copy of the code underneath the code that is already there, still inside your forever loop.</p>
+    <img src=".\images\duplicate-code.PNG" alt="forever, if 'light level' less than 200 then, show icon, else, clear screen" width="600px" height="auto">
+    <br>
+    <p>Change the <strong>light level</strong> block to a <strong>temperature</strong> block, then change the number to something more appropriate - have a look at the emulator's temperature gauge!</p>
+    <p>Edit the code in this new if-then-else block to decide what happens when the temperature is too low.</p>
+    <br>
+    <p>You can add extra options to your if-then-else block to make one thing happen if the temperature is too low, and something different happen if the temperature is too high!</p>
+    <img src=".\images\temperature-code.PNG" alt="start of new code... if 'temperature' less than 10 then, show icon, else if 'temperature' greater than 40 then, show icon, else, clear screen" width="600px" height="auto">
     <br>
   </div>
 
@@ -53,6 +81,7 @@
   </div>
 
   <nav class="links bg_green">
+    <p hidden>CREATE JAVASCRIPT.HTML EXTENSION</p>
     <a href="https://scienceoxford.github.io/ElecKit/" target="_blank">make it beep or flash</a>
     <a href="animation.html" target="_blank">design an animation</a>
     <a href="accelerometer.html" target"_blank">use the movement sensor</a>
